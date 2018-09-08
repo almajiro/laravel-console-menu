@@ -36,9 +36,9 @@ class MenuOption extends SelectableItem
      * @param bool $showItemExtra
      * @param bool $disabled
      */
-    public function __construct($value, $text, callable $callback, $showItemExtra = false, $disabled = false)
+    public function __construct($value, $text, callable $callback, $extendText = null, $disabled = false)
     {
-        parent::__construct($text, $callback, $showItemExtra, $disabled);
+        parent::__construct($text, $callback, $extendText, $disabled);
 
         $this->value = $value;
     }
